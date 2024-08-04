@@ -1,0 +1,9 @@
+E:\CL\ViewPoint_Generate\data\IRPC(1280x1280)\dataset/model6/G-PCC/level1 G-PCC
+E:\CL\ViewPoint_Generate\data\IRPC(1280x1280)\dataset/model6/G-PCC/level2 G-PCC
+E:\CL\ViewPoint_Generate\data\IRPC(1280x1280)\dataset/model6/G-PCC/level3 G-PCC
+E:\CL\ViewPoint_Generate\data\IRPC(1280x1280)\dataset/model6/PCL/level1 PCL
+E:\CL\ViewPoint_Generate\data\IRPC(1280x1280)\dataset/model6/PCL/level2 PCL
+E:\CL\ViewPoint_Generate\data\IRPC(1280x1280)\dataset/model6/PCL/level3 PCL
+E:\CL\ViewPoint_Generate\data\IRPC(1280x1280)\dataset/model6/V-PCC/level1 V-PCC
+E:\CL\ViewPoint_Generate\data\IRPC(1280x1280)\dataset/model6/V-PCC/level2 V-PCC
+E:\CL\ViewPoint_Generate\data\IRPC(1280x1280)\dataset/model6/V-PCC/level3 V-PCC
