@@ -10,7 +10,7 @@ gc.collect()
 torch.cuda.empty_cache()
 from torch.utils.data import DataLoader
 from model.ResCNN import view_generate
-#from model.ThreeElementCNN2 import view_generate    # WPC数据集点数多，容易爆显存，使用精简的网络结构
+#from model.ThreeElementCNN2 import view_generate
 import torch.optim as optim
 import torch.nn as nn
 
@@ -21,23 +21,23 @@ class experimentSet():
         if dataset_name == 'SJTU-PCQA':
             # 用于生成模型路径txt
             self.dataset_name = 'SJTU-PCQA'
-            self.model_path = 'E:\CL\ViewPoint_Generate\data\SJTU-PCQA'
-            self.out_train_txt = 'E:\CL\ViewPoint_Generate\log\SJTU_PCQA/train_path.txt'
-            self.out_test_txt = 'E:\CL\ViewPoint_Generate\log\SJTU_PCQA/test_path.txt'
+            self.model_path = '../data\SJTU-PCQA'
+            self.out_train_txt = '../log\SJTU_PCQA/train_path.txt'
+            self.out_test_txt = '../log\SJTU_PCQA/test_path.txt'
             # 用于保存训练过程中的文件路径
-            self.outpath = 'E:\CL\ViewPoint_Generate\log\SJTU_PCQA/'
+            self.outpath = '../log\SJTU_PCQA/'
         elif dataset_name == 'SJTU-PCQA(1280x1280)':
             # 用于生成模型路径txt
             self.dataset_name = 'SJTU-PCQA(1280x1280)'
-            self.model_path = 'E:\CL\ViewPoint_Generate\data\SJTU-PCQA(1280x1280)\dataset'
-            self.out_train_txt = 'E:\CL\ViewPoint_Generate\log\SJTU_PCQA_1280x1280/train_path.txt'
-            self.out_test_txt = 'E:\CL\ViewPoint_Generate\log\SJTU_PCQA_1280x1280/test_path.txt'
+            self.model_path = '../data\SJTU-PCQA(1280x1280)\dataset'
+            self.out_train_txt = '../log\SJTU_PCQA_1280x1280/train_path.txt'
+            self.out_test_txt = '../log\SJTU_PCQA_1280x1280/test_path.txt'
             # 用于保存训练过程中的文件路径
-            self.outpath = 'E:\CL\ViewPoint_Generate\log\SJTU_PCQA_1280x1280/'
+            self.outpath = '../log\SJTU_PCQA_1280x1280/'
         elif dataset_name == 'WPC2':
             # 用于生成模型路径txt
             self.dataset_name = 'WPC2'
-            self.model_path = 'E:\CL\ViewPoint_Generate\data\WPC2\dataset'
+            self.model_path = '../data\WPC2\dataset'
             self.out_train_txt = 'E:\CL\ViewPoint_Generate\log\WPC2/train_path.txt'
             self.out_test_txt = 'E:\CL\ViewPoint_Generate\log\WPC2/test_path.txt'
             # 用于保存训练过程中的文件路径
@@ -289,5 +289,4 @@ if __name__ == "__main__":
     # details = experimentSet('IRPC(1280x1280)')
     details = experimentSet('LSPCQA')
     ResCNN_Trainer().train_and_test(details)
-    print(666)
 
